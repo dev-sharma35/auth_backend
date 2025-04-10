@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <script type="module" src="dashboard.js"></script>
+</head>
+<body>
+  <h1 id="welcome-text">Welcome</h1>
+  <div id="teacher-controls" style="display: none;">
+    <h3>Start Analysis</h3>
+    <label>Course:
+      <input type="text" id="course-input" placeholder="e.g., Data Structures" />
+    </label><br><br>
+    <label>Section:
+      <input type="text" id="section-input" placeholder="e.g., A" />
+    </label><br><br>
+    <label>Semester:
+      <input type="number" id="semester-input" placeholder="e.g., 4" min="1" />
+    </label><br><br>
+    <label>Classroom No.:
+      <input type="text" id="classroom-input" placeholder="e.g., C-203" />
+    </label><br><br>
+    <button id="start-btn">Start Camera Analysis</button>
+    <button id="stop-btn">Stop Camera Analysis</button>
+    <hr>
+  </div>
+
+  <div id="data-display"></div>
+  <button onclick="logout()">Logout</button>
+</body>
+</html>
